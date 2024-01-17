@@ -1,0 +1,87 @@
+<template>
+    <div>
+        <div
+            class="w-full mb-[40px] clash text-[11px] md:text-[18px] bg-[#000] px-[25px] py-[30px] md:py-[30px] md:px-[80px]">
+            <div
+                class="mb-[40px] md:mt-[80px] aeonikregular text-[40px] md:text-[50px] lg:text-[117px] font-[400] leading-[120%] text-[#8491a0]">
+                Features
+            </div>
+            <div
+                class="md:flex mb-[25px] md:mb-[30px] md:space-x-[30px] space-y-[25px] md:space-y-[0px] px-[25px] md:px-[100px] md:items-center w-[80%] mx-auto md:w-full md:mx-[0px]">
+                <div class="md:w-[18%]">
+                    <img src="/image/techpoint.png" class="w-full" />
+                </div>
+                <div class="md:w-[18%]">
+                    <img src="/image/startupgrind.png" class="w-full" />
+                </div>
+                <div class="md:w-[18%]">
+                    <img src="/image/techcabal.png" class="w-full" />
+                </div>
+                <div class="md:w-[18%]">
+                    <img src="/image/DB.png" class="w-full" />
+                </div>
+                <div class="md:w-[18%]">
+                    <img src="/image/heritagebank.png" class="w-full" />
+                </div>
+            </div>
+            <div
+                class="md:flex mb-[25px] md:mb-[30px] md:space-x-[30px] space-y-[25px] md:space-y-[0px] px-[25px] md:px-[100px] md:items-center w-[80%] md:justify-center mx-auto md:w-[100%] md:mx-auto">
+                <div class="md:w-[18%]">
+                    <img src="/image/businessday.png" class="w-full" />
+                </div>
+                <div class="md:w-[18%]">
+                    <img src="/image/Vanuar.png" class="w-full" />
+                </div>
+                <div class="md:w-[18%]">
+                    <img src="/image/thisday.png" class="w-full" />
+                </div>
+            </div>
+        </div>
+        <!-- send gerald black a message section -->
+        <div
+            class="w-full md:flex md:items-baseline md:space-x-[8px] bg-[#fff3e4] px-[25px] py-[60px] md:py-[120px] md:px-[80px]">
+            <div class="md:w-[60%] mb-[40px] md:mb-[0px] w-full">
+                <div class="text-[#000] mb-[15px] clash text-[32px] md:text-[55px] font-[700]">Let&apos;s talk business
+                </div>
+                <div class="text-[#8491a0] md:w-[70%] aeoniklight text-[15px] md:text-[18px] font-[400] leading-[150%]">
+                    Now that you know a lot about me, let me know if you are interested to work with me.
+                </div>
+            </div>
+            <!-- form -->
+            <div class="md:w-[40%] w-full">
+                <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Name</div>
+                <div class="w-full mb-[10px]">
+                    <input autocomplete="false" type="text"
+                        class="w-full px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
+                </div>
+                <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Email</div>
+                <div class="w-full mb-[10px]">
+                    <input autocomplete="false" type="email"
+                        class="w-full px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
+                </div>
+                <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Message</div>
+                <div class="w-full mb-[10px]">
+                    <input autocomplete="false" type="text"
+                        class="w-full px-[8px] h-[90px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
+                </div>
+                <div
+                    class="w-full cursor-pointer text-[#fff] text-center bg-[#000] px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823]">
+                    Send a message
+                </div>
+            </div>
+            <!-- end form -->
+        </div>
+        <!--end message section-->
+        <div class="px-[25px] md:flex md:justify-between md:items-center py-[45px] md:px-[80px] w-full bg-[#000]">
+            <div class="flex mb-[10px] md:mb-[0px] item-center space-x-[9px]">
+                <div class="">
+                    <img src="/image/GBlogo.svg" class="cursor-pointer w-[30px] h-[30px] md:w-[42px] md:h-[42px]"
+                        loading="lazy" />
+                </div>
+                <div class="clash relative top-[1px] md:top-[4px] text-[20px] font-[700] text-[#fff]">GeraldBlack</div>
+            </div>
+            <div class="aeoniklight text-[#fff] text-[15px] font-[400]">All Right Reserved. Gerald Black</div>
+        </div>
+        <!--footer-->
+    </div>
+</template>
