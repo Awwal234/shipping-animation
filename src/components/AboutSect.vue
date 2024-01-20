@@ -5,7 +5,7 @@ import Feature from './FeaturesSec.vue';
 <template>
     <div>
         <div
-            class="px-[25px] mb-[40px] md:mt-[80px] aeonikregular text-[25px] md:text-[30px] lg:text-[50px] lg:font-bold font-[400] leading-[120%] text-[#8491a0] md:px-[80px]">
+            class="px-[25px] mb-[40px] md:mt-[80px] aeonikregular text-[20px] md:text-[30px] lg:text-[50px] lg:font-bold font-[800] leading-[120%] text-[#8491a0] md:px-[80px]">
             Beyond The Black, Meet Gerald
         </div>
         <div class="w-full clash text-[11px] md:text-[18px] bg-[#fff3e4] px-[25px] py-[30px] md:py-[120px] md:px-[80px]">

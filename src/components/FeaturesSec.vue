@@ -3,7 +3,7 @@
         <div
             class="w-full mb-[40px] clash text-[11px] md:text-[18px] bg-[#000] px-[25px] py-[30px] md:py-[30px] md:px-[80px]">
             <div
-                class="mb-[40px] mx-auto text-center md:mt-[80px] aeonikregular text-[25px] md:text-[30px] lg:text-[50px] lg:font-bold font-[400] leading-[120%] text-[#8491a0]">
+                class="mb-[40px] mx-auto text-center md:mt-[80px] aeonikregular text-[25px] md:text-[30px] lg:text-[50px] lg:font-bold font-[600] leading-[120%] text-[#8491a0]">
                 Features
             </div>
             <div
@@ -95,7 +95,7 @@
                         class="w-full px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
                 </div>
                 <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Message</div>
-                <div class="w-full mb-[10px]">
+                <div class="w-full mb-[20px] md:mb-[10px]">
                     <input autocomplete="false" type="text"
                         class="w-full px-[8px] h-[90px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
                 </div>
