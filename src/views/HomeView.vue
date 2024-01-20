@@ -14,10 +14,10 @@ import About from '../components/AboutSect.vue';
         <div class="clash text-[45px] mb-[20px] md:mb-[35px] text-wrap md:text-[80px] font-[700] text-[#fff]">
           Gerald Black
         </div>
-        <div class="aeonikregular mb-[30px] md:mb-[46px] font-[500] text-[18px] md:text-[22px] text-[#fff]">
-          I am the strategic architect, weaving ambition and expertise to sculpt triumphant narratives. Armed with a mind
-          that navigates commerce intricacies, I orchestrate growth, turning potential into profit with every calculated
-          move.
+        <div class="aeonikregular md:w-[80%] mb-[30px] md:mb-[46px] font-[500] text-[18px] md:text-[22px] text-[#fff]">
+          I am a distinguished and award - winning tech ecosystem builder known for my visionary leadership in building
+          the
+          African tech ecosystem.
         </div>
         <div
           class="w-fit cursor-pointer space-x-[6px] rounded-[4px] py-[10px] px-[22px] flex items-center h-fit bg-[#3F3F46]">

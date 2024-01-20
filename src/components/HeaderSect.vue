@@ -16,7 +16,7 @@ const toggleMenu = () => {
                     <img src="/image/GBlogo.svg" class="cursor-pointer w-[30px] h-[30px] md:w-[42px] md:h-[42px]"
                         loading="lazy" />
                 </div>
-                <div class="clash relative top-[1px] md:top-[4px] text-[20px] font-[700] text-[#fff]">GeraldBlack</div>
+                <div class="clash relative top-[1px] md:top-[4px] text-[20px] font-[700] text-[#fff]">Gerald Black</div>
             </div>
             <div>
                 <img @click="toggleMenu" src="/image/menu.svg"
@@ -29,29 +29,29 @@ const toggleMenu = () => {
             <div class="w-full">
                 <div class="space-y-[20px] w-full mb-[20px] md:space-y-[0px] md:flex md:items-center">
                     <div
-                        class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[40px] md:text-[40px] font-[700] text-[#fff]">
+                        class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[17px] md:text-[20px] font-[700] text-[#fff]">
                         Podcast
                     </div>
                     <div
-                        class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[40px] md:text-[40px] font-[700] text-[#fff]">
+                        class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[17px] md:text-[20px] font-[700] text-[#fff]">
                         YouTube
                     </div>
                     <div
-                        class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[40px] md:text-[40px] font-[700] text-[#fff]">
+                        class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[17px] md:text-[20px] font-[700] text-[#fff]">
                         Contact
                     </div>
                 </div>
                 <div class="space-y-[20px] w-full mb-[20px] md:space-y-[0px] md:flex md:items-center">
                     <div
-                        class="aeonikregular text-left w-[33.3%] cursor-pointer text-[40px] text-wrap md:text-[40px] font-[700] text-[#fff]">
+                        class="aeonikregular text-left w-[33.3%] cursor-pointer text-[17px] text-wrap md:text-[20px] font-[700] text-[#fff]">
                         Blog
                     </div>
                     <div
-                        class="aeonikregular text-left w-[33.3%] cursor-pointer text-[40px] text-wrap md:text-[40px] font-[700] text-[#fff]">
+                        class="aeonikregular text-left w-[33.3%] cursor-pointer text-[17px] text-wrap md:text-[20px] font-[700] text-[#fff]">
                         Microblack
                     </div>
                     <div
-                        class="aeonikregular w-[33.3%] text-left cursor-pointer text-[40px] text-wrap md:text-[40px] font-[700] text-[#fff]">
+                        class="aeonikregular w-[33.3%] text-left cursor-pointer text-[17px] text-wrap md:text-[20px] font-[700] text-[#fff]">
                         XConnect
                     </div>
                 </div>

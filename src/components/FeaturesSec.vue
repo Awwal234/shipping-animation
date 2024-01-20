@@ -3,11 +3,11 @@
         <div
             class="w-full mb-[40px] clash text-[11px] md:text-[18px] bg-[#000] px-[25px] py-[30px] md:py-[30px] md:px-[80px]">
             <div
-                class="mb-[40px] md:mt-[80px] aeonikregular text-[40px] md:text-[50px] lg:text-[117px] font-[400] leading-[120%] text-[#8491a0]">
+                class="mb-[40px] mx-auto text-center md:mt-[80px] aeonikregular text-[25px] md:text-[30px] lg:text-[50px] lg:font-bold font-[400] leading-[120%] text-[#8491a0]">
                 Features
             </div>
             <div
-                class="md:flex mb-[25px] md:mb-[30px] md:space-x-[30px] space-y-[25px] md:space-y-[0px] px-[25px] md:px-[100px] md:items-center w-[80%] mx-auto md:w-full md:mx-[0px]">
+                class="hidden md:flex mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-full md:mx-[0px]">
                 <div class="md:w-[18%]">
                     <img src="/image/techpoint.png" class="w-full" />
                 </div>
@@ -24,8 +24,43 @@
                     <img src="/image/heritagebank.png" class="w-full" />
                 </div>
             </div>
+            <!-- mobile -->
             <div
-                class="md:flex mb-[25px] md:mb-[30px] md:space-x-[30px] space-y-[25px] md:space-y-[0px] px-[25px] md:px-[100px] md:items-center w-[80%] md:justify-center mx-auto md:w-[100%] md:mx-auto">
+                class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-full md:mx-[0px]">
+                <div class="w-[30%]">
+                    <img src="/image/techpoint.png" class="w-full" />
+                </div>
+                <div class="w-[30%]">
+                    <img src="/image/startupgrind.png" class="w-full" />
+                </div>
+                <div class="w-[30%]">
+                    <img src="/image/techcabal.png" class="w-full" />
+                </div>
+            </div>
+            <div
+                class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-full md:mx-[0px]">
+                <div class="w-[30%]">
+                    <img src="/image/businessday.png" class="w-full" />
+                </div>
+                <div class="w-[30%]">
+                    <img src="/image/Vanuar.png" class="w-full" />
+                </div>
+                <div class="w-[30%]">
+                    <img src="/image/thisday.png" class="w-full" />
+                </div>
+            </div>
+            <div
+                class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-[70%] md:mx-[0px]">
+                <div class="w-[40%]">
+                    <img src="/image/heritagebank.png" class="w-full" />
+                </div>
+                <div class="w-[30%]">
+                    <img src="/image/DB.png" class="w-full" />
+                </div>
+            </div>
+            <!-- end mobile -->
+            <div
+                class="hidden md:flex mb-[25px] md:mb-[30px] md:space-x-[30px] space-y-[25px] md:space-y-[0px] px-[25px] md:px-[100px] md:items-center w-[80%] md:justify-center mx-auto md:w-[100%] md:mx-auto">
                 <div class="md:w-[18%]">
                     <img src="/image/businessday.png" class="w-full" />
                 </div>
@@ -78,7 +113,7 @@
                     <img src="/image/GBlogo.svg" class="cursor-pointer w-[30px] h-[30px] md:w-[42px] md:h-[42px]"
                         loading="lazy" />
                 </div>
-                <div class="clash relative top-[1px] md:top-[4px] text-[20px] font-[700] text-[#fff]">GeraldBlack</div>
+                <div class="clash relative top-[1px] md:top-[4px] text-[20px] font-[700] text-[#fff]">Gerald Black</div>
             </div>
             <div class="aeoniklight text-[#fff] text-[15px] font-[400]">All Right Reserved. Gerald Black</div>
         </div>

@@ -11,33 +11,6 @@ import { RouterLink, RouterView } from 'vue-router'
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: clash;
-  src: url(./fonts/ClashGrotesk-Variable.ttf);
-}
-
-@font-face {
-  font-family: aeoniklight;
-  src: url(./fonts/AeonikTRIAL-Light.otf);
-}
-
-@font-face {
-  font-family: aeonikregular;
-  src: url(./fonts/AeonikTRIAL-Regular.otf);
-}
-
-.clash {
-  font-family: clash;
-}
-
-.aeoniklight {
-  font-family: aeoniklight;
-}
-
-.aeonikregular {
-  font-family: aeonikregular;
-}
-
 html {
   height: 100%;
 }
@@ -45,6 +18,7 @@ html {
 body,
 main {
   min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body::-webkit-scrollbar {

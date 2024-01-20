@@ -5,13 +5,12 @@ import Feature from './FeaturesSec.vue';
 <template>
     <div>
         <div
-            class="px-[25px] mb-[40px] md:mt-[80px] aeonikregular text-[40px] md:text-[50px] lg:text-[117px] font-[400] leading-[120%] text-[#8491a0] md:px-[80px]">
-            About Me 101
+            class="px-[25px] mb-[40px] md:mt-[80px] aeonikregular text-[25px] md:text-[30px] lg:text-[50px] lg:font-bold font-[400] leading-[120%] text-[#8491a0] md:px-[80px]">
+            Beyond The Black, Meet Gerald
         </div>
-        <div class="w-full clash text-[11px] md:text-[18px] bg-[#fff3e4] px-[25px] py-[60px] md:py-[120px] md:px-[80px]">
+        <div class="w-full clash text-[11px] md:text-[18px] bg-[#fff3e4] px-[25px] py-[30px] md:py-[120px] md:px-[80px]">
             <div class="mb-[8px]">
-                Gerald Black is a distinguished and award-winning tech ecosystem builder known for his visionary leadership
-                in the African tech ecosystem. With a background in computer engineering and a strong entrepreneurial spirit
+                With a background in computer engineering and a strong entrepreneurial spirit
                 with over 11 years experience, Gerald has successfully connected founders, investors, and experts to create
                 thriving tech ecosystems. His early ventures set the stage for a career marked by success and recognition,
                 earning him prestigious awards for his contributions. Beyond professional achievements, Gerald is committed
