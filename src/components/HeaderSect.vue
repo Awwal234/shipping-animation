@@ -13,7 +13,7 @@ const toggleMenu = () => {
 
 const goTo = (url: string) => {
     //@ts-ignore
-    window.location.href(url);
+    window.location.assign(url);
     menuExtra.value = !menuExtra.value
 }
 
