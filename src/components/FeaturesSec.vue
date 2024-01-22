@@ -1,3 +1,18 @@
+<script lang="ts" setup>
+import { ref } from 'vue';
+import gsap from 'gsap'
+const layout = ref(false);
+
+const toggleLayout = () => {
+    layout.value = !layout.value
+    gsap.fromTo('.layout', { x: 0, y: 0, opacity: 1, duration: 4 }, { x: 0, y: -0, opacity: 0, ease: 'step(6)' })
+}
+const openLayout = () => {
+    layout.value = !layout.value
+    gsap.fromTo('.layout', { x: 0, y: -0, opacity: 0, duration: 4 }, { x: 0, y: 0, opacity: 1, ease: 'step(6)' })
+}
+</script>
+
 <template>
     <div>
         <div
@@ -9,72 +24,95 @@
             <div
                 class="hidden md:flex mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-full md:mx-[0px]">
                 <div class="md:w-[18%]">
-                    <img src="/image/techpoint.png" class="w-full" />
+                    <img @click="openLayout" src="/image/techpoint.png" class="w-full" />
                 </div>
                 <div class="md:w-[18%]">
-                    <img src="/image/startupgrind.png" class="w-full" />
+                    <a target="blank"
+                        href="https://www.startupgrind.com/events/details/startup-grind-lagos-presents-we=are-hosting-gerald-okonkwo-ceo-parkit"><img
+                            src="/image/startupgrind.png" class="w-full" /></a>
                 </div>
                 <div class="md:w-[18%]">
-                    <img src="/image/techcabal.png" class="w-full" />
+                    <a target="blank" href="https://techcabal.com/2023/11/04/black-ops-operators/"><img
+                            src="/image/techcabal.png" class="w-full cursor-pointer" /></a>
                 </div>
                 <div class="md:w-[18%]">
-                    <img src="/image/DB.png" class="w-full" />
+                    <a target="blank" href="https://www.benjamindada.com/mergers-acquisitions-african-startups-growth/"><img
+                            src="/image/DB.png" class="w-full cursor-pointer" /></a>
                 </div>
                 <div class="md:w-[18%]">
-                    <img src="/image/heritagebank.png" class="w-full" />
+                    <a target="blank" href="https://x.com/heritagebankplc/status/1051846794332827648?s=46"><img
+                            src="/image/heritagebank.png" class="w-full" /></a>
                 </div>
             </div>
             <!-- mobile -->
             <div
                 class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-full md:mx-[0px]">
                 <div class="w-[30%]">
-                    <img src="/image/techpoint.png" class="w-full" />
+                    <img @click="openLayout" src="/image/techpoint.png" class="w-full" />
                 </div>
                 <div class="w-[30%]">
-                    <img src="/image/startupgrind.png" class="w-full" />
+                    <a target="blank"
+                        href="https://www.startupgrind.com/events/details/startup-grind-lagos-presents-we=are-hosting-gerald-okonkwo-ceo-parkit"><img
+                            src="/image/startupgrind.png" class="w-full" /></a>
                 </div>
                 <div class="w-[30%]">
-                    <img src="/image/techcabal.png" class="w-full" />
+                    <a target="blank" href="https://techcabal.com/2023/11/04/black-ops-operators/"><img
+                            src="/image/techcabal.png" class="w-full" /></a>
                 </div>
             </div>
             <div
                 class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-full md:mx-[0px]">
                 <div class="w-[30%]">
-                    <img src="/image/businessday.png" class="w-full" />
+                    <a target="blank"
+                        href="https://businessday.ng/news/article/fixit45-acquires-parkit-unviels-subscription-based-vip-programme/"><img
+                            src="/image/businessday.png" class="w-full" /></a>
                 </div>
                 <div class="w-[30%]">
-                    <img src="/image/Vanuar.png" class="w-full" />
+                    <a target="blank"
+                        href="https://www.vanguardngr.com/2021/12/parkit-founder-gerald-okonkwo-appointed-ecowas-youth-ambassador/"><img
+                            src="/image/Vanuar.png" class="w-full" /></a>
                 </div>
                 <div class="w-[30%]">
-                    <img src="/image/thisday.png" class="w-full" />
+                    <a target="blank"
+                        href="https://www.thisdaylive.com/index.php/2021/11/27/fixit45-acquires-parkit-unviels-subscription-based-vip-programme?amp=1"><img
+                            src="/image/thisday.png" class="w-full" /></a>
                 </div>
             </div>
             <div
                 class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-[70%] md:mx-[0px]">
                 <div class="w-[40%]">
-                    <img src="/image/heritagebank.png" class="w-full" />
+                    <a target="blank" href="https://x.com/heritagebankplc/status/1051846794332827648?s=46"><img
+                            src="/image/heritagebank.png" class="w-full" /></a>
                 </div>
                 <div class="w-[30%]">
-                    <img src="/image/DB.png" class="w-full" />
+                    <a target="blank"
+                        href="https://www.benjamindada.com/mergers-acquisitions-african-startups-growth/"><img
+                            src="/image/DB.png" class="w-full" /></a>
                 </div>
             </div>
             <!-- end mobile -->
             <div
                 class="hidden md:flex mb-[25px] md:mb-[30px] md:space-x-[30px] space-y-[25px] md:space-y-[0px] px-[25px] md:px-[100px] md:items-center w-[80%] md:justify-center mx-auto md:w-[100%] md:mx-auto">
                 <div class="md:w-[18%]">
-                    <img src="/image/businessday.png" class="w-full" />
+                    <a target="blank"
+                        href="https://businessday.ng/news/article/fixit45-acquires-parkit-unviels-subscription-based-vip-programme/"><img
+                            src="/image/businessday.png" class="w-full" /></a>
                 </div>
                 <div class="md:w-[18%]">
-                    <img src="/image/Vanuar.png" class="w-full" />
+                    <a target="blank"
+                        href="https://www.vanguardngr.com/2021/12/parkit-founder-gerald-okonkwo-appointed-ecowas-youth-ambassador/"><img
+                            src="/image/Vanuar.png" class="w-full" /></a>
                 </div>
                 <div class="md:w-[18%]">
-                    <img src="/image/thisday.png" class="w-full" />
+                    <a target="blank"
+                        href="https://www.thisdaylive.com/index.php/2021/11/27/fixit45-acquires-parkit-unviels-subscription-based-vip-programme?amp=1"><img
+                            src="/image/thisday.png" class="w-full" /></a>
                 </div>
             </div>
         </div>
         <!-- send gerald black a message section -->
         <div
-            class="w-full md:flex md:items-baseline md:space-x-[8px] bg-[#fff3e4] px-[25px] py-[60px] md:py-[120px] md:px-[80px]">
+            class="w-full contactsection md:flex md:items-baseline md:space-x-[8px] bg-[#fff3e4] px-[25px] py-[60px] md:py-[120px] md:px-[80px]">
             <div class="md:w-[60%] mb-[40px] md:mb-[0px] w-full">
                 <div class="text-[#000] mb-[15px] clash text-[32px] md:text-[55px] font-[700]">Let&apos;s talk business
                 </div>
@@ -118,5 +156,25 @@
             <div class="aeoniklight text-[#fff] text-[15px] font-[400]">All Right Reserved. Gerald Black</div>
         </div>
         <!--footer-->
+        <!--overlay for features-->
+        <div v-show="layout"
+            class="w-full layout py-[20px] px-[25px] md:px-[80px] bg-[#000] fixed top-0 z-[2000] left-0 h-full">
+            <div class="w-full mb-[80px] flex items-center justify-between">
+                <div></div>
+                <div>
+                    <img @click="toggleLayout" src="/image/menu.svg"
+                        class="cursor-pointer w-[30px] h-[30px] md:w-[42px] md:h-[42px]" loading="lazy" />
+                </div>
+            </div>
+            <div class="space-y-[20px] text-left cursor-pointer text-[13px] md:text-[23px] font-[600] text-[#fff]">
+                <div class="underline w-fit"><a target="blank" referrer="no-referrer"
+                        href="https://techpoint.africa/2023/08/24/tech-operators-mixer-2023-spotlighting-theunsung-heroes-of-the-african-tech-space">https://techpoint.africa/2023/08/24/tech-operators-mixer-2023-spotlighting-theunsung-heroes-of-the-african-tech-space</a>
+                </div>
+                <div class="underline w-fit"><a target="blank" referrer="no-referrer"
+                        href="https://techpoint.africa/2023/03/14/gerald-black-okonkwo-parkit-founder">https://techpoint.africa/2023/03/14/gerald-black-okonkwo-parkit-founder</a>
+                </div>
+            </div>
+        </div>
+        <!--end overlay for features-->
     </div>
 </template>

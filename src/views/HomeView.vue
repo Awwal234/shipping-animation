@@ -1,6 +1,22 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import Header from '../components/HeaderSect.vue';
 import About from '../components/AboutSect.vue';
+import gsap from 'gsap'
+import { ScrollToPlugin, TextPlugin } from 'gsap/all'
+gsap.registerPlugin(ScrollToPlugin, TextPlugin)
+
+const toContact = () => {
+  gsap.to(window, { duration: 2, scrollTo: '.contactsection' })
+}
+
+const writeGerald = () => {
+  gsap.to('.geraldtext', { duration: 2, yoyo: true, text: 'Gerald Black', repeat: 2 })
+}
+
+onMounted(() => {
+  writeGerald();
+})
 </script>
 
 <template>
@@ -11,15 +27,15 @@ import About from '../components/AboutSect.vue';
       </div>
       <div class="pt-[180px] md:pt-[190px] w-full md:w-[55%]">
         <div class="aeonikregular mb-[20px] md:mb-[35px] font-[500] text-[18px] md:text-[22px] text-[#fff]">Hey, I'm</div>
-        <div class="clash text-[45px] mb-[20px] md:mb-[35px] text-wrap md:text-[80px] font-[700] text-[#fff]">
-          Gerald Black
+        <div class="clash geraldtext text-[45px] mb-[20px] md:mb-[35px] text-wrap md:text-[80px] font-[700] text-[#fff]">
+
         </div>
         <div class="aeonikregular md:w-[80%] mb-[30px] md:mb-[46px] font-[500] text-[18px] md:text-[22px] text-[#fff]">
           I am a distinguished and award - winning tech ecosystem builder known for my visionary leadership in building
           the
           African tech ecosystem.
         </div>
-        <div
+        <div @click="toContact()"
           class="w-fit cursor-pointer space-x-[6px] rounded-[4px] py-[10px] px-[22px] flex items-center h-fit bg-[#3F3F46]">
           <div><img src="/image/mail.svg" class="mail z-[0]" /></div>
           <div class="aeonikregular font-[500] text-[16px] md:text-[18px] text-[#fff]">Work with me</div>

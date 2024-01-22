@@ -1,8 +1,24 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import gsap from 'gsap'
+import { ScrollToPlugin } from 'gsap/all'
+
+gsap.registerPlugin(ScrollToPlugin)
 const menuExtra = ref(false)
 
 const toggleMenu = () => {
+    menuExtra.value = !menuExtra.value
+    gsap.fromTo('.slide', {y: -10, opacity: 0}, {y: 0, opacity: 1, ease: 'power1.in'})
+}
+
+const goTo = (url: string) => {
+    //@ts-ignore
+    window.location.href(url);
+    menuExtra.value = !menuExtra.value
+}
+
+const toContact = () => {
+    gsap.to(window, { duration: 2, scrollTo: '.contactsection' })
     menuExtra.value = !menuExtra.value
 }
 </script>
@@ -26,33 +42,33 @@ const toggleMenu = () => {
         <!-- extra section -->
         <div v-show="menuExtra">
             <div class="mt-[10px] mb-[40px] h-[3px] bg-[#2f2f2f]"></div>
-            <div class="w-full">
+            <div class="w-full slide">
                 <div class="space-y-[20px] w-full mb-[20px] md:space-y-[0px] md:flex md:items-center">
-                    <div
+                    <div @click="goTo('https://podcasters.spotify.com/pod/show/backendbygeraldblack?')"
                         class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[17px] md:text-[20px] font-[700] text-[#fff]">
                         Podcast
                     </div>
-                    <div
+                    <div @click="goTo('https://youtube.com/@geraldblack?si=oPfe44bXwyuflNUJ')"
                         class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[17px] md:text-[20px] font-[700] text-[#fff]">
                         YouTube
                     </div>
-                    <div
+                    <div @click="goTo('https://xconnect.geraldblack.co/')"
                         class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[17px] md:text-[20px] font-[700] text-[#fff]">
-                        Contact
+                        XConnect
                     </div>
                 </div>
                 <div class="space-y-[20px] w-full mb-[20px] md:space-y-[0px] md:flex md:items-center">
-                    <div
+                    <div @click="goTo('https://www.techbygerald.com/?m=1')"
                         class="aeonikregular text-left w-[33.3%] cursor-pointer text-[17px] text-wrap md:text-[20px] font-[700] text-[#fff]">
                         Blog
                     </div>
-                    <div
+                    <div @click="goTo('https://microblack.geraldblack.co/')"
                         class="aeonikregular text-left w-[33.3%] cursor-pointer text-[17px] text-wrap md:text-[20px] font-[700] text-[#fff]">
                         Microblack
                     </div>
-                    <div
+                    <div @click="toContact()"
                         class="aeonikregular w-[33.3%] text-left cursor-pointer text-[17px] text-wrap md:text-[20px] font-[700] text-[#fff]">
-                        XConnect
+                        Contact
                     </div>
                 </div>
             </div>
