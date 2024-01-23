@@ -2,6 +2,8 @@
 import { ref } from 'vue';
 import gsap from 'gsap'
 const layout = ref(false);
+const tp = ref(false);
+const tc = ref(false);
 
 const toggleLayout = () => {
     layout.value = !layout.value
@@ -9,6 +11,14 @@ const toggleLayout = () => {
 }
 const openLayout = () => {
     layout.value = !layout.value
+    tc.value = false;
+    tp.value = true;
+    gsap.fromTo('.layout', { x: 0, y: -0, opacity: 0, duration: 4 }, { x: 0, y: 0, opacity: 1, ease: 'step(6)' })
+}
+const openLayoutTwo = () => {
+    layout.value = !layout.value
+    tp.value = false;
+    tc.value = true;
     gsap.fromTo('.layout', { x: 0, y: -0, opacity: 0, duration: 4 }, { x: 0, y: 0, opacity: 1, ease: 'step(6)' })
 }
 </script>
@@ -32,8 +42,7 @@ const openLayout = () => {
                             src="/image/startupgrind.png" class="w-full" /></a>
                 </div>
                 <div class="md:w-[18%]">
-                    <a target="blank" href="https://techcabal.com/2023/11/04/black-ops-operators/"><img
-                            src="/image/techcabal.png" class="w-full cursor-pointer" /></a>
+                    <img @click="openLayoutTwo" src="/image/techcabal.png" class="w-full" />
                 </div>
                 <div class="md:w-[18%]">
                     <a target="blank" href="https://www.benjamindada.com/mergers-acquisitions-african-startups-growth/"><img
@@ -56,15 +65,14 @@ const openLayout = () => {
                             src="/image/startupgrind.png" class="w-full" /></a>
                 </div>
                 <div class="w-[30%]">
-                    <a target="blank" href="https://techcabal.com/2023/11/04/black-ops-operators/"><img
-                            src="/image/techcabal.png" class="w-full" /></a>
+                    <img @click="openLayoutTwo" src="/image/techcabal.png" class="w-full" />
                 </div>
             </div>
             <div
                 class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-full md:mx-[0px]">
                 <div class="w-[30%]">
                     <a target="blank"
-                        href="https://businessday.ng/news/article/fixit45-acquires-parkit-unviels-subscription-based-vip-programme/"><img
+                        href="https://businessday.ng/news/article/fixit45-acquires-parkit-unveils-subscription-based-vip-programme/"><img
                             src="/image/businessday.png" class="w-full" /></a>
                 </div>
                 <div class="w-[30%]">
@@ -74,7 +82,7 @@ const openLayout = () => {
                 </div>
                 <div class="w-[30%]">
                     <a target="blank"
-                        href="https://www.thisdaylive.com/index.php/2021/11/27/fixit45-acquires-parkit-unviels-subscription-based-vip-programme?amp=1"><img
+                        href="https://www.thisdaylive.com/index.php/2021/11/27/fixit45-acquires-parkit-unveils-subscription-based-vip-programme"><img
                             src="/image/thisday.png" class="w-full" /></a>
                 </div>
             </div>
@@ -85,9 +93,23 @@ const openLayout = () => {
                             src="/image/heritagebank.png" class="w-full" /></a>
                 </div>
                 <div class="w-[30%]">
-                    <a target="blank"
-                        href="https://www.benjamindada.com/mergers-acquisitions-african-startups-growth/"><img
+                    <a target="blank" href="https://www.benjamindada.com/mergers-acquisitions-african-startups-growth/"><img
                             src="/image/DB.png" class="w-full" /></a>
+                </div>
+            </div>
+            <div
+                class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-[70%] md:mx-[0px]">
+                <div class="w-[35%]">
+                    <a target="blank"
+                        href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
+                            src="https://kenyanwallstreet.com/wp-content/uploads/2020/01/logo-150x150.jpg"
+                            class="w-full" /></a>
+                </div>
+                <div class="w-[35%]">
+                    <a target="blank"
+                        href="https://lawverse.com.ng/wp-content/uploads/2023/11/LAWVERSE-MAGAZINE-ISSUE-8.pdf"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUA6Uxg2SywPldrMPA5Cnva83PlO53UuCrTMs3wdU27NsEccVPTSp2wfP&s=10"
+                            class="w-full" /></a>
                 </div>
             </div>
             <!-- end mobile -->
@@ -95,7 +117,7 @@ const openLayout = () => {
                 class="hidden md:flex mb-[25px] md:mb-[30px] md:space-x-[30px] space-y-[25px] md:space-y-[0px] px-[25px] md:px-[100px] md:items-center w-[80%] md:justify-center mx-auto md:w-[100%] md:mx-auto">
                 <div class="md:w-[18%]">
                     <a target="blank"
-                        href="https://businessday.ng/news/article/fixit45-acquires-parkit-unviels-subscription-based-vip-programme/"><img
+                        href="https://businessday.ng/news/article/fixit45-acquires-parkit-unveils-subscription-based-vip-programme/"><img
                             src="/image/businessday.png" class="w-full" /></a>
                 </div>
                 <div class="md:w-[18%]">
@@ -105,8 +127,23 @@ const openLayout = () => {
                 </div>
                 <div class="md:w-[18%]">
                     <a target="blank"
-                        href="https://www.thisdaylive.com/index.php/2021/11/27/fixit45-acquires-parkit-unviels-subscription-based-vip-programme?amp=1"><img
+                        href="https://www.thisdaylive.com/index.php/2021/11/27/fixit45-acquires-parkit-unveils-subscription-based-vip-programme"><img
                             src="/image/thisday.png" class="w-full" /></a>
+                </div>
+            </div>
+            <div
+                class="hidden md:flex mb-[25px] md:mb-[30px] md:space-x-[30px] space-y-[25px] md:space-y-[0px] px-[25px] md:px-[100px] md:items-center w-[80%] md:justify-center mx-auto md:w-[100%] md:mx-auto">
+                <div class="md:w-[18%]">
+                    <a target="blank"
+                        href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
+                            src="https://kenyanwallstreet.com/wp-content/uploads/2020/01/logo-150x150.jpg"
+                            class="w-full" /></a>
+                </div>
+                <div class="md:w-[18%]">
+                    <a target="blank"
+                        href="https://lawverse.com.ng/wp-content/uploads/2023/11/LAWVERSE-MAGAZINE-ISSUE-8.pdf"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUA6Uxg2SywPldrMPA5Cnva83PlO53UuCrTMs3wdU27NsEccVPTSp2wfP&s=10"
+                            class="w-full" /></a>
                 </div>
             </div>
         </div>
@@ -162,16 +199,29 @@ const openLayout = () => {
             <div class="w-full mb-[80px] flex items-center justify-between">
                 <div></div>
                 <div>
-                    <img @click="toggleLayout" src="/image/menu.svg"
-                        class="cursor-pointer w-[30px] h-[30px] md:w-[42px] md:h-[42px]" loading="lazy" />
+                    <svg @click="toggleLayout" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                        fill="none">
+                        <path d="M11.0827 2.91666L2.91602 11.0833M2.91602 2.91666L11.0827 11.0833" stroke="white"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </div>
             </div>
-            <div class="space-y-[20px] text-left cursor-pointer text-[13px] md:text-[23px] font-[600] text-[#fff]">
+            <div v-show="tp"
+                class="space-y-[20px] text-left cursor-pointer text-[13px] md:text-[23px] font-[600] text-[#fff]">
                 <div class="underline w-fit"><a target="blank" referrer="no-referrer"
-                        href="https://techpoint.africa/2023/08/24/tech-operators-mixer-2023-spotlighting-theunsung-heroes-of-the-african-tech-space">https://techpoint.africa/2023/08/24/tech-operators-mixer-2023-spotlighting-theunsung-heroes-of-the-african-tech-space</a>
+                        href="https://techpoint.africa/2023/08/24/tech-operators-mixer-2023-spotlighting-the-unsung-heroes-of-the-african-tech-space">https://techpoint.africa/2023/08/24/tech-operators-mixer-2023-spotlighting-the-unsung-heroes-of-the-african-tech-space</a>
                 </div>
                 <div class="underline w-fit"><a target="blank" referrer="no-referrer"
                         href="https://techpoint.africa/2023/03/14/gerald-black-okonkwo-parkit-founder">https://techpoint.africa/2023/03/14/gerald-black-okonkwo-parkit-founder</a>
+                </div>
+            </div>
+            <div v-show="tc"
+                class="space-y-[20px] text-left cursor-pointer text-[13px] md:text-[23px] font-[600] text-[#fff]">
+                <div class="underline w-fit"><a target="blank"
+                        href="https://techcabal.com/2023/11/04/black-ops-operators/">https://techcabal.com/2023/11/04/black-ops-operators/</a>
+                </div>
+                <div class="underline w-fit"><a target="blank" referrer="no-referrer"
+                        href="https://techcabal.com/2022/03/22/building-parkit-gerald-okonkwo-schneider-komolafe/">https://techcabal.com/2022/03/22/building-parkit-gerald-okonkwo-schneider-komolafe/</a>
                 </div>
             </div>
         </div>
