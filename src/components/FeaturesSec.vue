@@ -46,7 +46,7 @@ const openLayoutTwo = () => {
             <div
                 class="hidden md:flex mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-full md:mx-[0px]">
                 <div class="md:w-[18%]">
-                    <img @click="openLayout" src="/image/techpoint.png" class="w-full" />
+                    <img @click="openLayout" src="/image/techpoint.png" class="w-full cursor-pointer" />
                 </div>
                 <div class="md:w-[18%]">
                     <a target="blank"
@@ -77,7 +77,7 @@ const openLayoutTwo = () => {
                             src="/image/startupgrind.png" class="w-full" /></a>
                 </div>
                 <div class="w-[30%]">
-                    <img @click="openLayoutTwo" src="/image/techcabal.png" class="w-full" />
+                    <img @click="openLayoutTwo" src="/image/techcabal.png" class="w-full cursor-pointer" />
                 </div>
             </div>
             <div
@@ -213,7 +213,7 @@ const openLayoutTwo = () => {
             class="w-full layout py-[20px] px-[25px] md:px-[80px] bg-[#000] fixed top-0 z-[2000] left-0 h-full">
             <div class="w-full mb-[80px] flex items-center justify-between">
                 <div></div>
-                <div>
+                <div class="cursor-pointer">
                     <svg @click="toggleLayout" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
                         fill="none">
                         <path d="M11.0827 2.91666L2.91602 11.0833M2.91602 2.91666L11.0827 11.0833" stroke="white"
