@@ -4,6 +4,18 @@ import gsap from 'gsap'
 const layout = ref(false);
 const tp = ref(false);
 const tc = ref(false);
+const name = ref("");
+const email = ref("");
+const message = ref("");
+
+const mailBox = ref(false);
+
+const sendMail = () => {
+    mailBox.value = true;
+    setTimeout(() => {
+        mailBox.value = false;
+    }, 3000)
+}
 
 const toggleLayout = () => {
     layout.value = !layout.value
@@ -90,11 +102,11 @@ const openLayoutTwo = () => {
                 class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-[70%] md:mx-[0px]">
                 <div class="w-[40%]">
                     <a target="blank" href="https://x.com/heritagebankplc/status/1051846794332827648?s=46"><img
-                            src="/image/heritagebank.png" class="w-full" /></a>
+                            src="/image/heritagebank.png" class="w-full mx-auto" /></a>
                 </div>
                 <div class="w-[30%]">
                     <a target="blank" href="https://www.benjamindada.com/mergers-acquisitions-african-startups-growth/"><img
-                            src="/image/DB.png" class="w-full" /></a>
+                            src="/image/DB.png" class="w-full mx-auto" /></a>
                 </div>
             </div>
             <div
@@ -102,14 +114,13 @@ const openLayoutTwo = () => {
                 <div class="w-[35%]">
                     <a target="blank"
                         href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
-                            src="https://kenyanwallstreet.com/wp-content/uploads/2020/01/logo-150x150.jpg"
-                            class="w-full" /></a>
+                            src="/kenwall.png" class="w-[60px] h-[60px] mx-auto" /></a>
                 </div>
                 <div class="w-[35%]">
                     <a target="blank"
                         href="https://lawverse.com.ng/wp-content/uploads/2023/11/LAWVERSE-MAGAZINE-ISSUE-8.pdf"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUA6Uxg2SywPldrMPA5Cnva83PlO53UuCrTMs3wdU27NsEccVPTSp2wfP&s=10"
-                            class="w-full" /></a>
+                            class="w-full mx-auto" /></a>
                 </div>
             </div>
             <!-- end mobile -->
@@ -136,8 +147,7 @@ const openLayoutTwo = () => {
                 <div class="md:w-[18%]">
                     <a target="blank"
                         href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
-                            src="https://kenyanwallstreet.com/wp-content/uploads/2020/01/logo-150x150.jpg"
-                            class="w-full" /></a>
+                            src="/kenwall.png" class="w-[100px] h-[100px] mx-auto" /></a>
                 </div>
                 <div class="md:w-[18%]">
                     <a target="blank"
@@ -159,25 +169,30 @@ const openLayoutTwo = () => {
             </div>
             <!-- form -->
             <div class="md:w-[40%] w-full">
-                <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Name</div>
-                <div class="w-full mb-[10px]">
-                    <input autocomplete="false" type="text"
-                        class="w-full px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
-                </div>
-                <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Email</div>
-                <div class="w-full mb-[10px]">
-                    <input autocomplete="false" type="email"
-                        class="w-full px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
-                </div>
-                <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Message</div>
-                <div class="w-full mb-[20px] md:mb-[10px]">
-                    <input autocomplete="false" type="text"
-                        class="w-full px-[8px] h-[90px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
-                </div>
-                <div
-                    class="w-full cursor-pointer text-[#fff] text-center bg-[#000] px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823]">
-                    Send a message
-                </div>
+                <form method="POST" action="https://formspree.io/f/mzbndjbo">
+                    <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Name</div>
+                    <div class="w-full mb-[10px]">
+                        <input v-model="name" name="name" autocomplete="false" type="text"
+                            class="w-full px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
+                    </div>
+                    <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Email</div>
+                    <div class="w-full mb-[10px]">
+                        <input v-model="email" name="email" id="email-address" autocomplete="false" type="email"
+                            class="w-full px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none" />
+                    </div>
+                    <div class="text-[#000] mb-[8px] aeoniklight text-[16px] font-[400] leading-[150%]">Message</div>
+                    <div class="w-full md:mb-[10px]">
+                        <textarea v-model="message" name="message" autocomplete="false" type="text"
+                            class="w-full px-[8px] message pt-[6px] pb-[90px] aeoniklight text-[18px] rounded-[6px] border border-[#181823] focus:outline-none"></textarea>
+                    </div>
+                    <div v-show="mailBox" class="mt-[10px] mb-[10px]">
+                        Sent successfully
+                    </div>
+                    <button type="submit" @click="sendMail"
+                        class="w-full mt-[20px] cursor-pointer text-[#fff] text-center bg-[#000] px-[8px] py-[12px] aeoniklight text-[18px] rounded-[6px] border border-[#181823]">
+                        Send a message
+                    </button>
+                </form>
             </div>
             <!-- end form -->
         </div>
@@ -228,3 +243,10 @@ const openLayoutTwo = () => {
         <!--end overlay for features-->
     </div>
 </template>
+
+<style scoped>
+.message {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+</style>
