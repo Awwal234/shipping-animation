@@ -54,7 +54,7 @@ const openLayoutTwo = () => {
                             src="/image/startupgrind.png" class="w-full" /></a>
                 </div>
                 <div class="md:w-[18%]">
-                    <img @click="openLayoutTwo" src="/image/techcabal.png" class="w-full" />
+                    <img @click="openLayoutTwo" src="/image/techcabal.png" class="w-full cursor-pointer" />
                 </div>
                 <div class="md:w-[18%]">
                     <a target="blank" href="https://www.benjamindada.com/mergers-acquisitions-african-startups-growth/"><img
