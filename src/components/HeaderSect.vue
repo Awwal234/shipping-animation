@@ -8,7 +8,7 @@ const menuExtra = ref(false)
 
 const toggleMenu = () => {
     menuExtra.value = !menuExtra.value
-    gsap.fromTo('.slide', {y: -10, opacity: 0}, {y: 0, opacity: 1, ease: 'power1.in'})
+    gsap.fromTo('.slide', { y: -10, opacity: 0 }, { y: 0, opacity: 1, ease: 'power1. in' })
 }
 
 const goTo = (url: string) => {
@@ -21,13 +21,16 @@ const toContact = () => {
     gsap.to(window, { duration: 2, scrollTo: '.contactsection' })
     menuExtra.value = !menuExtra.value
 }
+const toTop = () => {
+    gsap.to(window, { duration: 2, scrollTo: '.porttop' })
+}
 </script>
 
 <template>
     <div
         class="bg-[#27272A] relative z-[1000] header mx-auto left-0 rounded-[10px] w-[95%] md:w-[90%] py-[18px] px-[20px] md:px-[117px]">
         <div class="w-full flex items-center justify-between">
-            <div class="flex item-center space-x-[9px]">
+            <div @click="toTop" class="flex md:cursor-pointer item-center space-x-[9px]">
                 <div class="">
                     <img src="/image/GBlogo.svg" class="cursor-pointer w-[30px] h-[30px] md:w-[42px] md:h-[42px]"
                         loading="lazy" />

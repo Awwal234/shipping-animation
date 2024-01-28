@@ -22,13 +22,13 @@ import Feature from './FeaturesSec.vue';
                 Africa, Gerald assumes a central role in shaping the trajectory of this prestigious community, designed
                 specifically for top-tier operators within venture-backed startups across Africa. Drawing from his
                 experience and influential network within the tech ecosystem, Gerald contributes to the community's growth
-                and influence
+                and influence.
             </div>
             <div class="mb-[8px]">
                 Gerald is also the host of "Backend by Gerald Black" podcast, a platform for spotlighting and celebrating
                 the achievements of tech founders, operators, investors, and hubs across Africa. Through engaging interviews
                 and discussions, the platform not only showcases their stories, challenges, and triumphs but also fosters
-                collaboration and knowledge-sharing within the African
+                collaboration and knowledge-sharing within the African.
             </div>
             <div class="mb-[16px]">
                 Gerald Black is more than an ecosystem builder; he's dedicated to collective success beyond personal

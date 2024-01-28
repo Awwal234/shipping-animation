@@ -25,7 +25,7 @@ onMounted(() => {
       <div class="fixed z-[1000] w-full left-0">
         <Header />
       </div>
-      <div class="pt-[180px] md:pt-[190px] w-full md:w-[55%]">
+      <div class="pt-[180px] porttop md:pt-[190px] w-full md:w-[55%]">
         <div class="aeonikregular mb-[20px] md:mb-[35px] font-[500] text-[18px] md:text-[22px] text-[#fff]">Hey, I'm</div>
         <div class="clash geraldtext text-[45px] mb-[20px] md:mb-[35px] text-wrap md:text-[80px] font-[700] text-[#fff]">
 
