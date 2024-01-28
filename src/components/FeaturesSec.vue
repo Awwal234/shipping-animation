@@ -100,15 +100,15 @@ const openLayoutTwo = () => {
                 </div>
             </div>
             <div
-                class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-[70%] md:mx-[0px]">
-                <div class="w-[30%]">
-                    <a target="blank"
-                        href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
-                            src="/kenwall.png" class="w-[60px] h-[60px] mx-auto" /></a>
-                </div>
+                class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-[90%] md:mx-[0px]">
                 <div class="w-[30%]">
                     <a target="blank" href="https://www.benjamindada.com/mergers-acquisitions-african-startups-growth/"><img
                             src="/image/DB.png" class="w-full mx-auto" /></a>
+                </div>
+                <div class="w-[20%]">
+                    <a target="blank"
+                        href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
+                            src="/kenwall.png" class="mx-auto" /></a>
                 </div>
                 <div class="w-[30%]">
                     <a target="blank"
