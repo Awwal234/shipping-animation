@@ -191,7 +191,7 @@ const openLayoutTwo = () => {
                 </div>
                 <div class="clash relative top-[1px] md:top-[4px] text-[20px] font-[700] text-[#fff]">Gerald Black</div>
             </div>
-            <div class="aeoniklight text-[#fff] text-[15px] font-[400]">All Right Reserved. Gerald Black</div>
+            <div class="aeoniklight text-[#fff] text-[15px] font-[400]">All Rights Reserved. Gerald Black</div>
         </div>
         <!--footer-->
         <!--overlay for features-->
