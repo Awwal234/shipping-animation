@@ -50,7 +50,7 @@ const openLayoutTwo = () => {
                 </div>
                 <div class="md:w-[18%]">
                     <a target="blank"
-                        href="https://www.startupgrind.com/events/details/startup-grind-lagos-presents-we=are-hosting-gerald-okonkwo-ceo-parkit"><img
+                        href="https://www.startupgrind.com/events/details/startup-grind-lagos-presents-we-are-hosting-gerald-okonkwo-ceo-parkit/"><img
                             src="/image/startupgrind.png" class="w-full" /></a>
                 </div>
                 <div class="md:w-[18%]">
@@ -61,8 +61,9 @@ const openLayoutTwo = () => {
                             src="/image/DB.png" class="w-full cursor-pointer" /></a>
                 </div>
                 <div class="md:w-[18%]">
-                    <a target="blank" href="https://x.com/heritagebankplc/status/1051846794332827648?s=46"><img
-                            src="/image/heritagebank.png" class="w-full" /></a>
+                    <a target="blank"
+                        href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
+                            src="/kenwall.png" class="w-[100px] h-[100px] mx-auto" /></a>
                 </div>
             </div>
             <!-- mobile -->
@@ -73,7 +74,7 @@ const openLayoutTwo = () => {
                 </div>
                 <div class="w-[30%]">
                     <a target="blank"
-                        href="https://www.startupgrind.com/events/details/startup-grind-lagos-presents-we=are-hosting-gerald-okonkwo-ceo-parkit"><img
+                        href="https://www.startupgrind.com/events/details/startup-grind-lagos-presents-we-are-hosting-gerald-okonkwo-ceo-parkit/"><img
                             src="/image/startupgrind.png" class="w-full" /></a>
                 </div>
                 <div class="w-[30%]">
@@ -100,23 +101,16 @@ const openLayoutTwo = () => {
             </div>
             <div
                 class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-[70%] md:mx-[0px]">
-                <div class="w-[40%]">
-                    <a target="blank" href="https://x.com/heritagebankplc/status/1051846794332827648?s=46"><img
-                            src="/image/heritagebank.png" class="w-full mx-auto" /></a>
+                <div class="w-[30%]">
+                    <a target="blank"
+                        href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
+                            src="/kenwall.png" class="w-[60px] h-[60px] mx-auto" /></a>
                 </div>
                 <div class="w-[30%]">
                     <a target="blank" href="https://www.benjamindada.com/mergers-acquisitions-african-startups-growth/"><img
                             src="/image/DB.png" class="w-full mx-auto" /></a>
                 </div>
-            </div>
-            <div
-                class="flex md:hidden mb-[30px] space-x-[30px] px-[25px] md:px-[100px] items-center mx-auto w-[70%] md:mx-[0px]">
-                <div class="w-[35%]">
-                    <a target="blank"
-                        href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
-                            src="/kenwall.png" class="w-[60px] h-[60px] mx-auto" /></a>
-                </div>
-                <div class="w-[35%]">
+                <div class="w-[30%]">
                     <a target="blank"
                         href="https://lawverse.com.ng/wp-content/uploads/2023/11/LAWVERSE-MAGAZINE-ISSUE-8.pdf"><img
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUA6Uxg2SywPldrMPA5Cnva83PlO53UuCrTMs3wdU27NsEccVPTSp2wfP&s=10"
@@ -140,14 +134,6 @@ const openLayoutTwo = () => {
                     <a target="blank"
                         href="https://www.thisdaylive.com/index.php/2021/11/27/fixit45-acquires-parkit-unveils-subscription-based-vip-programme"><img
                             src="/image/thisday.png" class="w-full" /></a>
-                </div>
-            </div>
-            <div
-                class="hidden md:flex mb-[25px] md:mb-[30px] md:space-x-[30px] space-y-[25px] md:space-y-[0px] px-[25px] md:px-[100px] md:items-center w-[80%] md:justify-center mx-auto md:w-[100%] md:mx-auto">
-                <div class="md:w-[18%]">
-                    <a target="blank"
-                        href="https://kenyanwallstreet.com/innovation-catalysts-operators-shaping-the-future-of-africas-tech-startups/"><img
-                            src="/kenwall.png" class="w-[100px] h-[100px] mx-auto" /></a>
                 </div>
                 <div class="md:w-[18%]">
                     <a target="blank"
