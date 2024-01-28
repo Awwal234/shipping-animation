@@ -55,13 +55,13 @@ const toTop = () => {
                         class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[17px] md:text-[20px] font-[700] text-[#fff]">
                         YouTube
                     </div>
-                    <div @click="goTo('https://xconnect.geraldblack.co/')"
+                    <div @click="goTo('https://www.techbygerald.com/?m=1')"
                         class="aeonikregular text-left md:w-[33.3%] cursor-pointer text-[17px] md:text-[20px] font-[700] text-[#fff]">
                         Blog
                     </div>
                 </div>
                 <div class="space-y-[20px] w-full mb-[20px] md:space-y-[0px] md:flex md:items-center">
-                    <div @click="goTo('https://www.techbygerald.com/?m=1')"
+                    <div @click="goTo('https://xconnect.geraldblack.co/')"
                         class="aeonikregular text-left w-[33.3%] cursor-pointer text-[17px] text-wrap md:text-[20px] font-[700] text-[#fff]">
                         XConnect
                     </div>
