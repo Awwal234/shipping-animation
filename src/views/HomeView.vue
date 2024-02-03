@@ -1,90 +1,72 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
-import Header from '../components/HeaderSect.vue';
-import About from '../components/AboutSect.vue';
-import gsap from 'gsap'
-import { ScrollToPlugin, TextPlugin } from 'gsap/all'
-gsap.registerPlugin(ScrollToPlugin, TextPlugin)
+import { ref, onMounted } from 'vue'
+import gsap from 'gsap';
+const shipText = ref(true)
+const open = ref(false)
+const packageIcon = ref(true)
+const line = ref(false)
+const light = ref(false)
+const optimusoff = ref(true)
+const shipOrdered = ref(false)
+const first = ref(false)
 
-const toContact = () => {
-  gsap.to(window, { duration: 2, scrollTo: '.contactsection' })
+const packageAnime = () => {
+  shipText.value = false;
+  first.value = true;
+  setTimeout(() => {
+    open.value = true;
+  }, 2000);
+  setTimeout(() => {
+    gsap.fromTo('#package', { x: 0, y: 0 }, { x: 45, y: 0, ease: 'power1.out' });
+  }, 3000);
+  setTimeout(() => {
+    open.value = false;
+    packageIcon.value = false;
+  }, 5000);
+  setTimeout(() => {
+    gsap.fromTo('#optimus', { x: 0, y: 0 }, { x: -50, y: 0, ease: 'power1.in' });
+    line.value = true;
+  }, 5000);
+  setTimeout(() => {
+    gsap.fromTo('#optimuslight', { x: -50, y: 0 }, { x: 140, y: 0, duration: 4, ease: 'power1.in' });
+    optimusoff.value = false;
+    light.value = true;
+    setTimeout(() => {
+      line.value = false;
+      first.value = false;
+      light.value = false;
+      shipOrdered.value = true;
+    }, 5000)
+  }, 6000);
 }
-
-const writeGerald = () => {
-  gsap.to('.geraldtext', { duration: 2, yoyo: true, text: 'Gerald Black', repeat: 2 })
-}
-
-onMounted(() => {
-  writeGerald();
-})
 </script>
 
 <template>
-  <main class="bg-[#000] min-h-[100vh] w-full">
-    <div class="first_section h-fit pt-[18px] px-[25px] md:pt-[20] md:px-[80px] w-full">
-      <div class="fixed z-[1000] w-full left-0">
-        <Header />
+  <main class="bg-[#ffdf80] hidden lg:flex items-center justify-center min-h-[100vh] w-full">
+    <div @click="packageAnime"
+      class="w-[230px] overflow-hidden bg-[#000] cursor-pointer text-center h-fit rounded-[600px]">
+      <div v-show="shipText" class="plus text-[#fff] py-[18px] text-[16px]">Ship Order</div>
+      <div v-show="first" class="flex space-x-[30px] justify-center py-[11px] items-center">
+        <div v-show="packageIcon" id="package" class="w-fit z-[150] h-fit"><img src="/package.svg"
+            class="w-[10px] h-[10px]" />
+        </div>
+        <div v-show="optimusoff" id="optimus" class="w-fit z-[200] h-fit relative"><img
+            :src="open ? 'optimusopen.svg' : '/optimusclosed.svg'" class="w-[60px] h-[40px]" /></div>
+        <div v-show="light" id="optimuslight" class="w-fit z-[200] h-fit relative"><img src="/optimuslight.svg"
+            class="w-[80px] h-[41px]" /></div>
       </div>
-      <div class="pt-[180px] porttop md:pt-[190px] w-full md:w-[55%]">
-        <div class="aeonikregular mb-[20px] md:mb-[35px] font-[500] text-[18px] md:text-[22px] text-[#fff]">Hey, I'm</div>
-        <div class="clash geraldtext text-[45px] mb-[20px] md:mb-[35px] text-wrap md:text-[80px] font-[700] text-[#fff]">
-
-        </div>
-        <div class="aeonikregular md:w-[80%] mb-[30px] md:mb-[46px] font-[500] text-[18px] md:text-[22px] text-[#fff]">
-          I am a distinguished and award - winning tech ecosystem builder known for my visionary leadership in building
-          the
-          African tech ecosystem.
-        </div>
-        <div @click="toContact()"
-          class="w-fit cursor-pointer space-x-[6px] rounded-[4px] py-[10px] px-[22px] flex items-center h-fit bg-[#3F3F46]">
-          <div><img src="/image/mail.svg" class="mail z-[0]" /></div>
-          <div class="aeonikregular font-[500] text-[16px] md:text-[18px] text-[#fff]">Work with me</div>
-        </div>
-        <div class="pb-[30px] md:pb-[90px]"></div>
+      <div v-show="shipOrdered" class="flex space-x-[4px] py-[18px] justify-center items-center">
+        <div class="plus text-[#fff] text-[16px]">Order Shipped</div>
+        <div id="tick" class="w-fit z-[200] h-fit relative"><img src="/tick.svg" class="w-[13px] h-[13px]" /></div>
       </div>
-      <!-- endly -->
+      <div v-show="line" class="absolute z-[100] mt-[-32px] w-fit h-fit"><img src="/roadline.svg"
+          class="w-[230px] h-[2px]" /></div>
     </div>
-    <div class="md:hidden mb-[30px] w-full h-fit">
-      <img src="/image/geraldbgsmall.png" class="w-full h-[600px]" />
-    </div>
-    <About />
   </main>
 </template>
 
 <style scoped>
 main {
-  background: #111;
-}
-
-.first_section {
-  background: url('/geraldbgbig.png');
-  background-repeat: no-repeat;
-  object-fit: contain;
-  background-size: 100% 100%;
-}
-
-.mail {
-  animation: 1s float linear infinite;
-}
-
-@keyframes float {
-  0% {
-    top: 0px;
-    position: relative;
-  }
-
-  100% {
-    top: -4px;
-    position: relative;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .first_section {
-    background: #111;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    background-size: 100% 100%;
-  }
+  background: #ffdf80;
 }
 </style>
